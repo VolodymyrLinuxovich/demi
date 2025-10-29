@@ -1,5 +1,8 @@
 # DEMI - Deodorizing Engineering Majors Intelligently
 
+[![Watch the demo]](https://youtu.be/5mRBLSm8bQI)
+[![Devpost - Project]](https://devpost.com/software/demi-deodorizing-engineering-majors-intelligently)
+
 ## Problem
 When you walk into a hackathon, what hits you first? **The smell** (and a whole buffet of other aromas).
 Sleep debt + crowded rooms + warm labs = VOC spikes. Manual deodorant is easy to forget and hard to time.
@@ -21,34 +24,34 @@ Everything is configurable; a dry-run mode lets you test logic without spraying.
   fastapi + uvicorn (local control), requests + paramiko (HTTP/SSH), transformers + torch (optional depth)
 • Repository layout:
 
-├── control/
-│   ├── record_dataset.sh
-│   ├── replay_trajectory.sh
-│   ├── run_trajectory.py
-│   └── teleop.py
-├── cv/
-│   ├── cv_pipeline.py
-│   ├── depth_estimator.py
-│   ├── depth_mask_strategies.py
-│   ├── image_segmenter.py
-│   ├── mask_intersection.py
-│   ├── run_offensive_cv.py
-│   ├── utils.py
-│   └── temp/
-├── hardware/
-│   ├── actuator.py
-│   ├── camera.py
-│   ├── filter.py
-│   ├── main.py
-│   └── sensors.py
-├── server/
-│   └── collect_pi_data.py
-├── .DS_Store
-├── .gitignore
-├── README.md
-├── __init__.py
-├── main.py                  # top-level loop/orchestrator
-└── requirements.txt
+  - main.py
+  - requirements.txt
+  - README.md
+  - __init__.py
+  - .gitignore
+  - .DS_Store
+  - control/
+    - run_trajectory.py
+    - teleop.py
+    - record_dataset.sh
+    - replay_trajectory.sh
+  - cv/
+    - cv_pipeline.py
+    - depth_estimator.py
+    - depth_mask_strategies.py
+    - image_segmenter.py
+    - mask_intersection.py
+    - run_offensive_cv.py
+    - utils.py
+    - temp/
+  - hardware/
+    - actuator.py
+    - camera.py
+    - filter.py
+    - main.py
+    - sensors.py
+  - server/
+    - collect_pi_data.py
 
 ## Quick Start
 1) Clone & environment
@@ -117,7 +120,7 @@ Note: verify pinouts, current draw, and power rails against datasheets.
 ## Safety & Ethics
 - Start with a dry run or a water can.
 - Keep spray away from face; don’t use on others without explicit consent.
-- Many deodorants are flammable — avoid flames and hot surfaces.
+- Many deodorants are flammable - avoid flames and hot surfaces.
 - Respect venue rules for aerosols and robots.
 
 ## Roadmap
@@ -127,7 +130,7 @@ Note: verify pinouts, current draw, and power rails against datasheets.
 - [ ] Local web dashboard (live charts + logs)
 
 ## Acknowledgments
-- Original concept & implementation: ethanhharrison/demi — special thanks to **E Harrison**.
+- Original concept & implementation: ethanhharrison/demi - special thanks to **E Harrison**.
 
 ## Created by
 - Eric Ji
