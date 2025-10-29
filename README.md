@@ -4,7 +4,7 @@
 [🧩 Devpost - Project](https://devpost.com/software/demi-deodorizing-engineering-majors-intelligently)
 
 ## Problem
-When you walk into a hackathon, what hits you first? **The smell** (and a whole buffet of other aromas).
+When you walk into a hackathon, what hits you first? <br> **The smell** (and a whole buffet of other aromas).
 Sleep debt + crowded rooms + warm labs = VOC spikes. Manual deodorant is easy to forget and hard to time.
 We need a low-cost, safe, and configurable way to **detect** odor indicators and **act** immediately, without constant monitoring.
 
@@ -19,7 +19,7 @@ The system smooths noisy readings (moving average), decides with threshold + coo
 Everything is configurable; a dry-run mode lets you test logic without spraying.
 
 ## Tech Stack & What’s Included
-<br>• Language: Python 3.10+
+• Language: Python 3.10+
 <br>• Core libs: Sensor I/O & GPIO (Pi), opencv-python (camera),
   fastapi + uvicorn (local control), requests + paramiko (HTTP/SSH), transformers + torch (optional depth)
 <br>• Repository layout:
