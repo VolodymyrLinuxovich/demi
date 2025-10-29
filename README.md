@@ -11,9 +11,9 @@ We need a low-cost, safe, and configurable way to **detect** odor indicators and
 ## What is DEMI?
 DEMI is a wearable/clip-on prototype that **automatically applies deodorant** when VOC levels exceed a configurable threshold.
 It combines:
-• a TVOC sensor to quantify odor indicators;
-• an optional front-facing camera for context/heuristics;
-• a servo actuator that presses a standard aerosol can.
+<br>• a TVOC sensor to quantify odor indicators;
+<br>• an optional front-facing camera for context/heuristics;
+<br>• a servo actuator that presses a standard aerosol can.
 
 The system smooths noisy readings (moving average), decides with threshold + cooldown, and triggers a safe actuation trajectory.
 Everything is configurable; a dry-run mode lets you test logic without spraying.
